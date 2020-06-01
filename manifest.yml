@@ -1,0 +1,10 @@
+---
+applications:
+- name: pcfdemo
+  memory: 1024M 
+  instances: 1
+  host: pcf-demo
+  path: ./target/pcfdemo.war
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
+#  domain: apps.vcloud4.local
